@@ -24,19 +24,19 @@ public class Triangle_Test {
 		@After
 		public void tearDown() throws Exception {
 		}
-		Triangle test = new Triangle(6, 8, 10);
+		Triangle test = new Triangle(4, 6, 8);
 		@Test
 		public void testPerimeter() 
 		{
 			assertTrue(new Triangle(1,2,3).getPerimeter() == 6.0);
 			assertFalse(new Triangle(4,5,6).getPerimeter() == 96);
-			assertTrue(new Triangle().getPerimeter() == 3.0);
+			assertTrue(test.getPerimeter() == 18.0);
 			assertFalse(new Triangle().getPerimeter() == 196);
 		}
 		@Test
 		public void testArea() 
 		{
 			assertTrue(new Triangle(3,4,5).getArea() == 6.0);
-			assertFalse(new Triangle(1,1,1).getArea() == 420.0);
+			assertFalse(test.getArea() == 420.0);
 	}
 }
